@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Будматеріали</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="header__nav">
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-wrapper-logo">
+                        <!--<img src="./images/logo.png" alt="logo">-->
+                        <div class="header__nav-wrapper-logo-div">ВІНУКРБУД</div>
+                    </div>
+                    <div class="header__nav-wrapper-phone">
+                        <div class="header__nav-wrapper-phone-wrapper">
+                            <div class="header__nav-wrapper-phone-wrapper-icon">
+                                <img src="./icons/phone.png" alt="phone">
+                            </div>
+                            <div class="header__nav-wrapper-phone-wrapper-number">
+                                <a href="tel:+380999999999">+38(099)99-999-99</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__nav-wrapper-question">
+                        <div class="header__nav-wrapper-question-wrapper">
+                            <div class="header__nav-wrapper-question-wrapper-icon">
+                                <img src="./icons/question.png" alt="question">
+                            </div>
+                            <div class="header__nav-wrapper-question-wrapper-question">ЗАДАТИ ПИТАННЯ</div>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+            <div class="header__video">
+                <video width="100%" height="100%" autoplay muted loop>
+                    <source src="./videos/video.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+            <div class="header__content">
+                <div class="header__content-header">
+                    <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay=".3s">БУДІВЕЛЬНІ МЕТЕРІАЛИ</h1>
+                    <h2 class="wow animate__animated animate__fadeInRight" data-wow-delay=".6s">З гарантією та доставкою по Вінниці</h2>
+                </div>
+                <div class="header__content-form">
+                    <div class="header__content-form-header">Безкоштовний розрахунок вартості матеріалу</div>
+                    <div class="header__content-form-content">
+                        <form action="#" data-form>
+                            <input class="header__content-form-content-name input" id="name" name="name" placeholder="Ваше ім'я" type="text" required>
+                            <input class="header__content-form-content-phone input" required placeholder="Ваш номер телефону" name="phone" type="text" inputmode="numeric" id="phone">
+                            <input type="email" id="email" style="display: none">
+                            <input type="text" id="notes" style="display: none">
+                            <input type="text" id="type" name="type" value="РОЗРАХУНОК ВАРТОСТІ" style="display: none">
+                            <button class="header__content-form-content-btn">Замовити розрахунок</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="benefits">
+                <div class="benefits__wrapper">
+                    <div class="benefits__header">Наші переваги</div>
+                    <div class="benefits__content">
+                        <div class="benefits__content-benefit">
+                            <div class="benefits__content-benefit-image">
+                                <img src="./icons/guarantee.png" alt="benefit" class="wow animate__animated animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="0s">
+                            </div>
+                            <div class="benefits__content-benefit-desc">Гарантія<br> від 00 до 00 років</div>
+                        </div>
+                        <div class="benefits__content-benefit">
+                            <div class="benefits__content-benefit-image">
+                                <img src="./icons/design.png" alt="benefit" class="wow animate__animated animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                            </div>
+                            <div class="benefits__content-benefit-desc">Безкоштовний прорахунок</div>
+                        </div>
+                        <div class="benefits__content-benefit">
+                            <div class="benefits__content-benefit-image">
+                                <img src="./icons/delivery.png" alt="benefit" class="wow animate__animated animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                            </div>
+                            <div class="benefits__content-benefit-desc">Швидка доставка по місту Вінниці</div>
+                        </div>
+                        <div class="benefits__content-benefit">
+                            <div class="benefits__content-benefit-image">
+                                <img src="./icons/price.png" alt="benefit" class="wow animate__animated animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                            </div>
+                            <div class="benefits__content-benefit-desc">Низькі ціни за якісні послуги</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="assortment">
+                <div class="assortment__wrapper">
+                    <div class="assortment__header">Асортимент будівельних<br>матеріалів</div>
+                    <div class="assortment__content wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+                        <div class="assortment__content-slider slider1">
+
+                            <div class="slider1__wrapper">
+                                <div class="slider1__inner">
+                                    <div class="slider1__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider1__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider1__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider1__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider1__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                </div>
+                                <div class="slider1__prev-btn-wrapper">
+                                    <div class="slider1__prev-btn slider1__btn"></div>
+                                </div>
+                                <div class="slider1__next-btn-wrapper">
+                                    <div class="slider1__next-btn slider1__btn"></div>            
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="assortment__content-menu slider1-menu">
+                            <div class="assortment__content-menu-header"><span class="assortment__content-menu-header-span">×</span>Для фасаду</div>
+                            <div class="assortment__content-menu-item slider1-item" data-slide="1">Матеріал 1</div>
+                            <div class="assortment__content-menu-item slider1-item" data-slide="2">Матеріал 2</div>
+                            <div class="assortment__content-menu-item slider1-item" data-slide="3">Матеріал 3</div>
+                            <div class="assortment__content-menu-item slider1-item" data-slide="4">Матеріал 4</div>
+                            <div class="assortment__content-menu-item slider1-item" data-slide="5">Матеріал 5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__wrapper">
+                    <div class="assortment__content wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-delay="0s">
+                        <div class="assortment__content-slider slider2">
+
+                            <div class="slider2__wrapper">
+                                <div class="slider2__inner">
+                                    <div class="slider2__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider2__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider2__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider2__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider2__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                </div>
+                                <div class="slider2__prev-btn-wrapper">
+                                    <div class="slider2__prev-btn slider2__btn"></div>
+                                </div>
+                                <div class="slider2__next-btn-wrapper">
+                                    <div class="slider2__next-btn slider2__btn"></div>            
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="assortment__content-menu slider2-menu">
+                            <div class="assortment__content-menu-header"><span class="assortment__content-menu-header-span">×</span>Для покрівлі</div>
+                            <div class="assortment__content-menu-item slider2-item" data-slide="1">Матеріал 1</div>
+                            <div class="assortment__content-menu-item slider2-item" data-slide="2">Матеріал 2</div>
+                            <div class="assortment__content-menu-item slider2-item" data-slide="3">Матеріал 3</div>
+                            <div class="assortment__content-menu-item slider2-item" data-slide="4">Матеріал 4</div>
+                            <div class="assortment__content-menu-item slider2-item" data-slide="5">Матеріал 5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__wrapper">
+                    <div class="assortment__content wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+                        <div class="assortment__content-slider slider3">
+
+                            <div class="slider3__wrapper">
+                                <div class="slider3__inner">
+                                    <div class="slider3__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider3__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider3__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider3__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                    <div class="slider3__slide">
+                                        <img src="./images/draft1.jpg">
+                                    </div>
+                                </div>
+                                <div class="slider3__prev-btn-wrapper">
+                                    <div class="slider3__prev-btn slider3__btn"></div>
+                                </div>
+                                <div class="slider3__next-btn-wrapper">
+                                    <div class="slider3__next-btn slider3__btn"></div>            
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="assortment__content-menu slider3-menu">
+                            <div class="assortment__content-menu-header"><span class="assortment__content-menu-header-span">×</span>Для гідроізоляції</div>
+                            <div class="assortment__content-menu-item slider3-item" data-slide="1">Матеріал 1</div>
+                            <div class="assortment__content-menu-item slider3-item" data-slide="2">Матеріал 2</div>
+                            <div class="assortment__content-menu-item slider3-item" data-slide="3">Матеріал 3</div>
+                            <div class="assortment__content-menu-item slider3-item" data-slide="4">Матеріал 4</div>
+                            <div class="assortment__content-menu-item slider3-item" data-slide="5">Матеріал 5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__btn">
+                    <div class="assortment__btn-wrapper">
+                        <div class="assortment__btn-wrapper-image">
+                            <img src="./icons/list.png" alt="button">
+                        </div>
+                        <div class="assortment__btn-wrapper-text">ОТРИМАТИ ПРАЙС</div>
+                    </div>
+                </div>
+            </section>
+            <section class="consult">
+                <div class="consult-backgr">
+                    <div class="consult-backgr-dark">
+                        <div class="consult-backgr-dark-text wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">Отримай <span>безкоштовну</span><br>консультацію</div>
+                        <div class="consult-backgr-dark-btn">
+                            <div class="consult-backgr-dark-btn-wrapper">
+                                <div class="consult-backgr-dark-btn-wrapper-image">
+                                    <img src="./icons/phoneBtn.png" alt="button">
+                                </div>
+                                <div class="consult-backgr-dark-btn-wrapper-text">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service">
+                <div class="service__wrapper">
+                    <div class="service__header">Наші послуги</div>
+                    <div class="service__subheader">Гарантуємо високу якість</div>
+                    <div class="service__tabs">
+                        <div class="service__tabs-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                            <div class="service__tabs-item-image">
+                                <img src="./images/tab.jpg" alt="tab">
+                            </div>
+                            <div class="service__tabs-item-text">
+                                <div class="service__tabs-item-text-header">ГІДРОІЗОЛЯЦІЯ<br>ФУНДАМЕНТУ</div>
+                                <div class="service__tabs-item-text-content">Якщо Ви хочете зробити надійну і доступну гідроізоляцію багатоповерхового будинку або іншого будівельного об’єкта ми готові виконати поставлену задачу. Запорука довговічної і безпроблемної в експлуатації гідроізоляції фундаменту — якісні матеріали, правильно підібрана технологія, професійне виконання робіт.</div>
+                            </div>
+                        </div>
+                        <div class="service__tabs-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <div class="service__tabs-item-image">
+                                <img src="./images/tab.jpg" alt="tab">
+                            </div>
+                            <div class="service__tabs-item-text">
+                                <div class="service__tabs-item-text-header">ГІДРОІЗОЛЯЦІЯ<br>ФУНДАМЕНТУ</div>
+                                <div class="service__tabs-item-text-content">Якщо Ви хочете зробити надійну і доступну гідроізоляцію багатоповерхового будинку або іншого будівельного об’єкта ми готові виконати поставлену задачу. Запорука довговічної і безпроблемної в експлуатації гідроізоляції фундаменту — якісні матеріали, правильно підібрана технологія, професійне виконання робіт.</div>
+                            </div>
+                        </div>
+                        <div class="service__tabs-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <div class="service__tabs-item-image">
+                                <img src="./images/tab.jpg" alt="tab">
+                            </div>
+                            <div class="service__tabs-item-text">
+                                <div class="service__tabs-item-text-header">ГІДРОІЗОЛЯЦІЯ<br>ФУНДАМЕНТУ</div>
+                                <div class="service__tabs-item-text-content">Якщо Ви хочете зробити надійну і доступну гідроізоляцію багатоповерхового будинку або іншого будівельного об’єкта ми готові виконати поставлену задачу. Запорука довговічної і безпроблемної в експлуатації гідроізоляції фундаменту — якісні матеріали, правильно підібрана технологія, професійне виконання робіт.</div>
+                            </div>
+                        </div>
+                        <div class="service__tabs-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                            <div class="service__tabs-item-image">
+                                <img src="./images/tab.jpg" alt="tab">
+                            </div>
+                            <div class="service__tabs-item-text">
+                                <div class="service__tabs-item-text-header">ГІДРОІЗОЛЯЦІЯ<br>ФУНДАМЕНТУ</div>
+                                <div class="service__tabs-item-text-content">Якщо Ви хочете зробити надійну і доступну гідроізоляцію багатоповерхового будинку або іншого будівельного об’єкта ми готові виконати поставлену задачу. Запорука довговічної і безпроблемної в експлуатації гідроізоляції фундаменту — якісні матеріали, правильно підібрана технологія, професійне виконання робіт.</div>
+                            </div>
+                        </div>
+                        <div class="service__tabs-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <div class="service__tabs-item-image">
+                                <img src="./images/tab.jpg" alt="tab">
+                            </div>
+                            <div class="service__tabs-item-text">
+                                <div class="service__tabs-item-text-header">ГІДРОІЗОЛЯЦІЯ<br>ФУНДАМЕНТУ</div>
+                                <div class="service__tabs-item-text-content">Якщо Ви хочете зробити надійну і доступну гідроізоляцію багатоповерхового будинку або іншого будівельного об’єкта ми готові виконати поставлену задачу. Запорука довговічної і безпроблемної в експлуатації гідроізоляції фундаменту — якісні матеріали, правильно підібрана технологія, професійне виконання робіт.</div>
+                            </div>
+                        </div>
+                        <div class="service__tabs-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <div class="service__tabs-item-image">
+                                <img src="./images/tab.jpg" alt="tab">
+                            </div>
+                            <div class="service__tabs-item-text">
+                                <div class="service__tabs-item-text-header">ГІДРОІЗОЛЯЦІЯ<br>ФУНДАМЕНТУ</div>
+                                <div class="service__tabs-item-text-content">Якщо Ви хочете зробити надійну і доступну гідроізоляцію багатоповерхового будинку або іншого будівельного об’єкта ми готові виконати поставлену задачу. Запорука довговічної і безпроблемної в експлуатації гідроізоляції фундаменту — якісні матеріали, правильно підібрана технологія, професійне виконання робіт.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-btn">
+                        <div class="service-btn-wrapper">
+                            <div class="service-btn-wrapper-image">
+                                <img src="./icons/phoneBtn.png" alt="button">
+                            </div>
+                            <div class="service-btn-wrapper-text">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</div>
+                        </div>
+                    </div>
+            </section>
+            <section class="modal">
+                <div class="modal__wrapper">
+                    <div class="modal__consultation modal__all">
+                        <div id="ass" class="modal__consultation-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__consultation-header modal__all-header">Зателефонуємо Вам найближчим часом</div>
+                        <form action="#" class="modal__consultation-form" data-form>
+                            <input required placeholder="Ваше имя" id="name" name="name" type="text" class="modal__consultation-form-input">
+                            <input class="modal__consultation-form-input" required placeholder="Ваш номер телефону" name="phone" type="text" inputmode="numeric" id="phone">
+                            <input type="email" id="email" name="email" class="modal__consultation-form-input" placeholder="Ваша пошта">
+                            <input type="text" id="notes" style="display: none">
+                            <input type="text" id="type" name="type" value="КОНСУЛЬТАЦІЯ" style="display: none">
+                            <button class="modal__consultation-form-btn" data-formBtn>Отримати консультацію</button>
+                        </form>
+                    </div>
+                    <div class="modal__price modal__all">
+                        <div id="ass" class="modal__price-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__price-header modal__all-header">Заповніть форму, щоб отримати прайс</div>
+                        <form action="#" class="modal__price-form" data-form>
+                            <input required placeholder="Ваше имя" id="name" name="name" type="text" class="modal__price-form-input">
+                            <input class="modal__price-form-input" required placeholder="Ваш номер телефону" name="phone" type="text" inputmode="numeric" id="phone">
+                            <input type="email" id="email" name="email" class="modal__price-form-input" placeholder="Ваша пошта">
+                            <input type="text" id="notes" style="display: none">
+                            <input type="text" id="type" name="type" value="ПРАЙС ЛИСТ" style="display: none">
+                            <button class="modal__price-form-btn" data-formBtn>Отримати прайс</button>
+                        </form>
+                    </div>
+                    <div class="modal__question modal__all">
+                        <div id="ass" class="modal__question-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__question-header modal__all-header">Відповімо на Ваше питання найближчим часом</div>
+                        <form action="#" class="modal__question-form" data-form>
+                            <input required placeholder="Ваше имя" name="name" id="name" type="text" class="modal__question-form-input">
+                            <input class="modal__question-form-input" required placeholder="Ваш номер телефону" name="phone" type="text" inputmode="numeric" id="phone">
+                            <input type="email" id="email" name="email" class="modal__question-form-input" placeholder="Ваша пошта">
+                            <textarea placeholder="Ваше питання" name="notes" id="note" class="modal__question-form-input" style="height: 80px; padding: 5px"></textarea> 
+                            <input type="text" id="type" name="type" value="ЗАПИТАННЯ" style="display: none">
+                            <button class="modal__question-form-btn" data-formBtn>Задати питання</button>
+                        </form>
+                    </div>
+                    <div class="modal__thanks modal__all">
+                        <div class="modal__thanks-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__thanks-header modal__all-header">Дякуємо!</br>Зв'яжемося з Вами найближчим часом</div>
+                    </div>
+                    <div class="modal__error modal__all">
+                        <div class="modal__error-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__error-header modal__all-header">Упс!</br>Щось пішло не так...</div>
+                    </div>
+                </div>
+            </section>
+            <section class="fixed">
+                <a class="fixed__arrow animate__animated animate__fadeIn" href="#header" style="display: none;">
+                    <img src="icons/arrow.png" alt="arrow">
+                </a>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__header">Наші контакти</div>
+                <div class="footer__wrapper">
+                    <div class="footer__city-contacts wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="footer__city">Вінниця</div>
+                        <div class="footer__city-contacts-phone">
+                            <div class="footer__city-contacts-phone-image">
+                                <img src="./icons/phone.png" alt="phone">
+                            </div>
+                            <a class="footer__city-contacts-phone-number" href="tel:+380999999999">+38(099)99-999-99</a>
+                        </div>
+                        <div class="footer__city-contacts-time">
+                            <div class="footer__city-contacts-time-image">
+                                <img src="./icons/calendar.png" alt="calendar">
+                            </div>
+                            <div class="footer__city-contacts-time-number">Пн-пт 8:30 - 17:30</div>
+                        </div>
+                        <div class="footer__city-contacts-adress">
+                            <div class="footer__city-contacts-adress-image">
+                                <img src="./icons/address.png" alt="address">
+                            </div>
+                            <address class="footer__city-contacts-adress-number">Адрес: адреса, вул. адреса, 000/0</address>
+                        </div>
+                        <div class="footer__city-contacts-email">
+                            <div class="footer__city-contacts-email-image">
+                                <img src="./icons/letter.png" alt="letter">
+                            </div>
+                            <a class="footer__city-contacts-email-number" href="mailto:ask@htmlbook.ru">mailmail@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__city-map wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.537260552202!2d28.425555215102836!3d49.22830228254411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5c64796677af%3A0x2aa0817570ca6f6!2z0YPQuy4gNjAwLdC70LXRgtC40Y8sIDE3LCDQktC40L3QvdC40YbQsCwg0JLQuNC90L3QuNGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAyMTAwMA!5e0!3m2!1sru!2sua!4v1617053845961!5m2!1sru!2sua" width="70%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right-text">Copyright © 2021 НАЗВА – Будівельні матеріали</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+        if(window.getComputedStyle(document.querySelector('body')).width.replace(/[A-Za-z]/g, '')>=1140){
+            $(document).ready(function() {
+                $("#phone").mask("+38(999)99-999-99");
+            });
+        }
+    </script>
+</html>

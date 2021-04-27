@@ -1,0 +1,127 @@
+.assortment
+    &__wrapper
+        width: 85%
+        margin: 0 auto
+        margin-bottom: 80px
+    &__header
+        color: $nored-text
+        //text-shadow: #000 1px 1px 2px
+        font-weight: 700
+        font-size: 60px
+        text-align: center
+        margin-top: 60px
+        margin-bottom: 100px
+    &__content
+        height: 400px
+        width: 100%
+        display: grid
+        grid-template-columns: 6fr 4fr
+        grid-gap: 10px
+        margin-bottom: 150px
+        &-slider
+            height: 400px
+        &-menu
+            height: 400px
+            position: relative
+            &-header
+                text-align: center
+                font-size: 40px
+                font-family: 'Russo One', sans-serif
+                //font-weight: 900
+                margin: 0 auto
+                margin-top: 10px
+                padding-left: 20px
+                padding-right: 20px
+                color: #007D41
+                //background-color: $red-color
+                border-radius: 10px
+                //text-shadow: #000 2px 2px 5px
+                //box-shadow: #000 2px 2px 5px
+                padding-top: 5px
+                padding-bottom: 5px
+                width: 100%
+                margin-bottom: 40px
+                position: relative
+                &-span
+                    color: #333
+                    padding-right: 5px
+            &-item
+                text-align: center
+                font-size: 25px
+                font-weight: 400
+                margin: 0 auto
+                margin-bottom: 25px
+                cursor: pointer
+                transition: .5s all
+                position: relative
+                width: 70%
+                &::after
+                    content: ''
+                    position: absolute
+                    height: 3px
+                    border-radius: 50%
+                    width: 0%
+                    bottom: -10px
+                    left: 50%
+                    transform: translateX(-50%)
+                    background-color: #000
+                    transition: 1s all
+                &:hover
+                    transform: scale(1.1)
+                    color: $red-color
+                    text-shadow: #000 1px 1px 1px
+                    &::after
+                        width: 50%
+                    //&::before
+                    //    background: #fff
+                    //    opacity: 0
+                //&::before
+                    //transition: 1s all
+                    //content: ''
+                    //position: absolute
+                    //top: 50%
+                    //transform: translateY(-50%)
+                    //height: 1px
+                    //width: 100%
+                    //left: 50%
+                    //z-index: -2
+                    //margin: 0 auto
+                    //transform: translateX(-50%)
+                    //background: linear-gradient(90deg, $red-color, #fff, #fff, #fff, $red-color)
+    &__btn
+        margin-bottom: 50px
+        &-wrapper
+            margin: 0 auto
+            margin-top: 10px
+            background-color: $red-color
+            color: #000
+            outline: 0
+            cursor: pointer
+            transition: .5s all
+            border: 0
+            box-shadow: #000 0px 0px 10px 0px
+            width: 300px
+            border-radius: 10px
+            height: 45px
+            display: grid
+            grid-template-columns: 3fr 8fr
+            &:hover
+                transform: scale(1.05)
+            &-image
+                height: 30px
+                top: 50%
+                transform: translateY(-50%)
+                position: relative
+                width: fit-content
+                justify-self: right
+                img
+                    object-fit: contain
+                    height: 100%
+                    display: inline
+                    //top: 50%
+                    //transform: translateY(50%)
+            &-text
+                padding-left: 10px
+                justify-self: left
+                line-height: 45px
+                        

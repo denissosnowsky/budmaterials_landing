@@ -1,0 +1,166 @@
+.footer
+    position: relative
+    background-color: $nored-text
+    height: fit-content
+    &__header
+        color: #fff
+        text-shadow: #000 1px 1px 2px
+        font-weight: 700
+        font-size: 60px
+        text-align: center
+        padding-top: 100px
+        padding-bottom: 50px
+    &::after
+        position: absolute
+        content: ''
+        width: 100%
+        top: 0px
+        background: url('../images/footer.svg') center center/cover repeat-x
+        background-size: auto 80px
+        height: 80px
+    &__city
+        color: #fff
+        text-shadow: #000 1px 1px 2px
+        font-weight: 400
+        font-size: 35px
+        text-align: center
+        margin-bottom: 50px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-color: #000
+            height: 1px
+            width: 180px
+            bottom: -15px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 50%
+            box-shadow: #000 0px 0px 3px 1px
+        &-contacts
+            height: fit-content
+            align-self: center
+            width: 90%
+            margin: 0 auto
+            &-phone
+                display: grid
+                grid-template-columns: 1fr 8fr
+                width: fit-content
+                height: 30px
+                margin: 0 auto 
+                transition: .5s all
+                margin-bottom: 15px
+                line-height: 30px
+                &-image
+                    height: 100%
+                    width: 25px
+                    justify-self: right
+                    img
+                        object-fit: fill
+                        height: 100%
+                        width: 100%
+                &-number
+                    justify-self: left
+                    font-size: 20px
+                    text-decoration: none
+                    color: #fff
+                &:hover
+                    transform: scale(1.05)
+            &-time
+                display: grid
+                grid-template-columns: 2fr 8fr
+                width: fit-content
+                height: 30px
+                margin: 0 auto 
+                transition: .5s all
+                margin-bottom: 15px
+                &-image
+                    height: 100%
+                    width: 30px
+                    justify-self: right
+                    img
+                        object-fit: fill
+                        height: 90%
+                        width: 90%
+                &-number
+                    justify-self: left
+                    font-size: 20px
+                    color: #fff
+                    padding-left: 5px
+                    padding-top: 3px
+                &:hover
+                    transform: scale(1.05)
+            &-adress
+                display: grid
+                grid-template-columns: 1.5fr 8fr
+                width: fit-content
+                height: 30px
+                margin: 0 auto 
+                transition: .5s all
+                margin-bottom: 15px
+                &-image
+                    height: 100%
+                    width: 30px
+                    justify-self: right
+                    img
+                        object-fit: fill
+                        height: 90%
+                        width: 100%
+                &-number
+                    justify-self: left
+                    font-size: 20px
+                    color: #fff
+                    padding-left: 5px
+                    padding-top: 3px
+                    font-style: normal
+                &:hover
+                    transform: scale(1.05)
+            &-email
+                display: grid
+                grid-template-columns: 2fr 8fr
+                width: fit-content
+                height: 30px
+                margin: 0 auto 
+                transition: .5s all
+                margin-bottom: 
+                &-image
+                    height: 100%
+                    width: 30px
+                    justify-self: right
+                    img
+                        object-fit: fill
+                        height: 90%
+                        width: 100%
+                &-number
+                    justify-self: left
+                    font-size: 20px
+                    color: #fff
+                    padding-left: 5px
+                    padding-top: 3px
+                    font-style: normal
+                    text-decoration: none
+                &:hover
+                    transform: scale(1.05)
+        &-map
+            iframe
+                display: block
+                margin: 0 auto
+    &-right
+        padding-top: 50px
+        &-text
+            color: #fff
+            text-shadow: #000 1px 1px 2px
+            font-weight: 400
+            font-size: 15px
+            text-align: center
+            padding-bottom: 20px
+            margin-top: 30px
+            position: relative
+    &__wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr
+        width: 80%
+        margin: 0 auto
+
+
+

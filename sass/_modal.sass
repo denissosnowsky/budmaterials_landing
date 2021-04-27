@@ -1,0 +1,167 @@
+.modal
+    &__wrapper
+        display: none
+        position: fixed
+        top: 0%
+        left: 0%
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0, .7)
+        z-index: 11
+        overflow: auto
+    &__all
+        position: absolute
+        width: 500px
+        top: 15%
+        left: 50%
+        transform: translateX(-50%)
+        background-color: rgba(256,256,256, 0.9)
+        padding-bottom: 20px
+        border-radius: 20px
+        &-close
+            position: absolute
+            top: 2%
+            right: 5%
+            font-size: 32px
+            transition: .5s all
+            cursor: pointer
+            &:hover
+                transform: scale(1.3)
+        &-header
+            text-align: center
+            margin-bottom: 30px
+            font-weight: 500
+            font-size: 25px
+            padding-left: 30px
+            padding-right: 30px
+    &__consultation
+        display: none
+        min-height: 340px
+        padding-top: 30px
+        &-form
+            &-input
+                position: relative
+                height: 50px
+                border: 0px 
+                bottom: 50%
+                width: 250px
+                text-align: center
+                margin-left: 40px
+                box-shadow: 0px 0px 20px 0px #555
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+
+                height: 40px
+                margin-top: 10px
+                box-shadow: #000 0px 0px 4px 0px
+                border-radius: 5px
+            &-btn
+                position: relative
+                height: 50px
+                border: 0px 
+                background-color: $red-color
+                bottom: 50%
+                width: 200px
+                cursor: pointer
+                transition: .5s all
+                box-shadow: #000 0px 0px 4px 0px
+                color: #000
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+                border-radius: 5px
+                &:hover
+                    transform: scale(1.1)
+    &__price
+        display: none
+        min-height: 340px
+        padding-top: 30px
+        &-form
+            &-input
+                position: relative
+                height: 50px
+                border: 0px 
+                bottom: 50%
+                width: 250px
+                text-align: center
+                margin-left: 40px
+                box-shadow: 0px 0px 20px 0px #555
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                height: 40px
+                margin-top: 10px
+                box-shadow: #000 0px 0px 4px 0px
+                border-radius: 5px
+            &-btn
+                position: relative
+                height: 50px
+                border: 0px 
+                background-color: $red-color
+                bottom: 50%
+                width: 200px
+                cursor: pointer
+                transition: .5s all
+                box-shadow: #000 0px 0px 4px 0px
+                color: #000
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+                border-radius: 5px
+                &:hover
+                    transform: scale(1.1)
+    &__question
+        display: none
+        min-height: 340px
+        padding-top: 30px
+        &-form
+            &-input
+                position: relative
+                height: 50px
+                border: 0px 
+                bottom: 50%
+                width: 250px
+                text-align: center
+                margin-left: 40px
+                box-shadow: 0px 0px 20px 0px #555
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+
+                //width: 90%
+                height: 40px
+                margin-top: 10px
+                box-shadow: #000 0px 0px 4px 0px
+                border-radius: 5px
+            &-btn
+                position: relative
+                height: 50px
+                border: 0px 
+                background-color: $red-color
+                bottom: 50%
+                width: 200px
+                cursor: pointer
+                transition: .5s all
+                box-shadow: #000 0px 0px 4px 0px
+                color: #000
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+                border-radius: 5px
+                &:hover
+                    transform: scale(1.1)
+    &__thanks
+        display: none
+        height: 170px 
+        padding-top: 50px
+    &__error
+        display: none
+        height: 170px 
+        padding-top: 50px

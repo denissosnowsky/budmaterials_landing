@@ -1,0 +1,119 @@
+.service
+    &__wrapper
+        width: 90%
+        margin: 0 auto
+        margin-bottom: 80px
+    &__header
+        color: $nored-text
+        //text-shadow: #000 1px 1px 2px
+        font-weight: 700
+        font-size: 60px
+        text-align: center
+        margin-top: 100px
+    &__subheader
+        color: $red-color
+        text-shadow: #000 1px 1px 2px
+        font-weight: 400
+        font-size: 25px
+        text-align: center
+        margin-bottom: 100px
+        margin-top: 40px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-color: #000
+            height: 1px
+            width: 180px
+            bottom: -15px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 50%
+            box-shadow: #000 0px 0px 3px 1px
+    &__tabs
+        margin: 0 auto
+        margin-top: 60px
+        width: 95%
+        height: auto
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: repeat(auto-fill, 800px)
+        grid-column-gap: 30px
+        grid-row-gap: 40px
+        &-item
+            background-color: $red-color
+            display: grid
+            grid-template-rows: 4fr 7fr
+            box-shadow: #000 2px 2px 10px 0px
+            transition: .5s all
+            height: 800px
+            &-image
+                height: 100%
+                width: 100%
+                transition: .5s all
+                img
+                    object-fit: fill
+                    height: 100%
+                    width: 90%
+                    position: relative
+                    top: -25px
+                    left: -15px
+                &:hover
+                    transform: translateY(10px)
+            &-text
+                &-header
+                    color: #333
+                    //text-shadow: #fff 1px 0px 1px, #fff 0px 1px 1px, #fff -1px 0px 1px, #fff 0px -1px 1px
+                    font-weight: 400
+                    font-size: 28px
+                    text-align: center
+                    margin-bottom: 50px
+                    margin-top: 20px
+                    position: relative
+                    font-family: 'Russo One', sans-serif
+                &-content
+                    padding-left: 35px
+                    padding-right: 35px
+                    text-align: left
+                    font-weight: 400
+                    font-size: 18px
+                    color: #000
+                    //text-shadow: #fff 0px 0px 1px
+            &:hover
+                transform: scale(1.05)
+    &-btn
+        margin-bottom: 70px
+        margin-top: 50px
+        &-wrapper
+            margin: 0 auto
+            margin-top: 10px
+            background-color: $red-color
+            color: #000
+            outline: 0
+            cursor: pointer
+            transition: .5s all
+            border: 0
+            box-shadow: #000 0px 0px 10px 0px
+            width: 300px
+            border-radius: 10px
+            height: 45px
+            display: grid
+            grid-template-columns: 2fr 10fr
+            &:hover
+                transform: scale(1.05)
+            &-image
+                height: 30px
+                top: 50%
+                transform: translateY(-50%)
+                position: relative
+                width: fit-content
+                justify-self: right
+                img
+                    object-fit: contain
+                    height: 100%
+                    display: inline
+            &-text
+                padding-left: 10px
+                line-height: 45px
+                justify-self: left
+

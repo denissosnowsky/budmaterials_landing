@@ -1,0 +1,56 @@
+.consult
+    margin-top: 120px
+    &-backgr
+        height: 500px
+        width: 100%
+        background: url('../images/workers.jpg') center center/cover no-repeat
+        &-dark
+            background-color: rgba(0,0,0,0.8)
+            height: 100%
+            width: 100%
+            &-text
+                color: #fff
+                font-weight: 700
+                font-size: 70px  
+                text-align: center
+                text-shadow: #000 2px 2px 5px
+                width: 70%
+                margin: 0 auto
+                padding-top: 80px
+                padding-bottom: 50px
+                span
+                    color: $red-color
+            &-btn
+                margin-bottom: 50px
+                &-wrapper
+                    margin: 0 auto
+                    margin-top: 10px
+                    background-color: $red-color
+                    color: #333
+                    outline: 0
+                    cursor: pointer
+                    transition: .5s all
+                    border: 0
+                    box-shadow: #000 0px 0px 10px 0px
+                    width: 300px
+                    border-radius: 10px
+                    height: 45px
+                    display: grid
+                    grid-template-columns: 2fr 10fr
+                    &:hover
+                        transform: scale(1.05)
+                    &-image
+                        height: 30px
+                        top: 50%
+                        transform: translateY(-50%)
+                        position: relative
+                        width: fit-content
+                        justify-self: right
+                        img
+                            object-fit: contain
+                            height: 100%
+                            display: inline
+                    &-text
+                        padding-left: 10px
+                        line-height: 45px
+                        justify-self: left
